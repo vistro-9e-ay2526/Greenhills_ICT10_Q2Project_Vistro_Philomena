@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--Py-script CDN-->
+        <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
+        <!-- This script tag bootstraps PyScript -->
+        <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>   
+    <title>Meet the Creator</title>
+    <style>
+        body{
+    margin:0;
+
+    background:
+    radial-gradient(circle,
+    #7e8185 0%,
+    #474b55 45%,
+    #5f675f 100%);
+
+    color:#d8d8d0;
+}
+        nav{
+        background:#07122b;
+        padding:10px 20px;
+        }
+
+        .nav-container{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .nav-right{
+            display:flex;
+            gap:20px;
+        }
+
+        .nav-right a{
+            color:white;
+            text-decoration:none;
+        }
+        .intro{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            gap:100px;
+            padding:80px 50px;
+        }
+
+        .left{
+            text-align:center;
+            font-weight: lighter;
+            font-style: italic;
+        }
+
+        .left img{
+            width:300px;
+            height:450px;
+        }
+
+        .right{
+            max-width:600px;
+        }
+        .top-row,
+.bottom-row{
+    display:flex;
+    justify-content:center;
+    gap:100px;
+    margin:50px 0;
+}
+
+.hobby{
+    text-align:center;
+}
+
+.hobby img{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+
+    border-radius:50%;
+    border:3px dashed darkred;
+}
+footer{
+    text-align:center;
+    padding:20px;
+
+    background:#07122b;
+}
+    </style>
+</head>
+<body>
+<nav>
+    <div class="nav-container">
+        <div class="nav-left">
+            <h2>THE FAYZ</h2>
+        </div>
+        <div class="nav-right">
+            <a href="m-addition.html">Member Addition System</a>
+            <a href="e-finder.html">Periodic Table: Element Finder</a>
+            <a href="c-verification.html">Logout</a>
+        </div>
+    </div>
+</nav>
+
+    <div class="intro">
+    <div class="left">
+        <img src="portrait.jpg">
+
+        <h3>"Art should comfort the disturbed and disturb the comfortable" -Unknown</h3>
+    </div>
+
+    <div class="right">
+        <h1>Hello there, I am Lizzie Vistro</h1>
+
+        <h3>
+            and welcome to the Fallout Alley Youth Zone Club.
+        </h3>
+
+        <p>
+            This club was created out of my interest in suspense
+            and thriller stories, particularly Michael Grant's
+            Gone series.
+        </p>
+    </div>
+</div>
+
+   <h2 class="section-title">My Interests/Hobbies</h2>
+
+<div class="top-row">
+
+    <div class="hobby">
+        <h4>Mending/Sewing</h4>
+        <img src="sewing.jpg">
+    </div>
+
+    <div class="hobby">
+        <h4>Hiking/Biking</h4>
+        <img src="hiking.jpg">
+    </div>
+
+    <div class="hobby">
+        <h4>Music & Dance</h4>
+        <img src="dance.jpg">
+    </div>
+
+</div>
+
+<hr>
+
+<div class="bottom-row">
+
+    <div class="hobby">
+        <img src="chemistry.jpg">
+        <h4>Chemistry</h4>
+    </div>
+
+    <div class="hobby">
+        <img src="books.jpg">
+        <h4>Literature</h4>
+    </div>
+
+    <div class="hobby">
+        <img src="art.jpg">
+        <h4>Visual Arts & Design</h4>
+    </div>
+
+</div>
+
+    <footer>
+         <p id="footer">©2026 | The FAYZ</p>
+    </footer>
+
+</body>
+</html>
