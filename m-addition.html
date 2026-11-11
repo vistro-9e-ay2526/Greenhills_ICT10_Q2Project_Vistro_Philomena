@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Py-script CDN-->
+        <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
+        <!-- This script tag bootstraps PyScript -->
+        <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>   
+    <title>Member Addition System</title>
+    <style>
+        body{
+    margin:0;
+    min-height:100vh;
+
+    background:
+    radial-gradient(
+        circle at center,
+        #787d81 0%,
+        #525860 35%,
+        #454962 60%,
+        #596659 100%
+    );
+
+    color:#d7d8d2;
+}
+       nav{
+    background:#07122b;
+    border-top:4px solid #40445b;
+    border-bottom:4px solid #40445b;
+    padding:10px 20px;
+}
+
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.nav-right{
+    display:flex;
+    gap:25px;
+}
+
+.nav-right a{
+    color:#d7d8d2;
+    font-size:18px;
+}
+h1{
+    text-align:center;
+    font-size:70px;
+    margin-bottom:0;
+    color:#d5d6cd;
+}
+
+h5{
+    text-align:center;
+    margin-top:20px;
+    font-size:25px;
+    color:#8f908b;
+}
+hr{
+    width:68%;
+    border:none;
+    height:2px;
+    background:#492929;
+    margin:50px auto;
+}
+.row{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:100px;
+}
+        .form-column{
+            margin-top:20px;
+        }
+input[type="text"]{
+    width:250px;
+    height:35px;
+    margin-bottom:25px;
+
+    border:3px solid #47357b;
+    background:#ebebeb;
+
+    font-size:18px;
+    padding-left:10px;
+}
+        input[type="button"]{
+            width:230px;
+            height:40px;
+            border: 1px solid black;
+            border-radius:35px;
+            background:#8d180b;
+            color:white;
+            font-size:17px;
+            cursor:pointer;
+            display:block;
+            margin:20px auto;
+        }
+        input[type="button"]:hover{
+            background:#a31d0d;
+        }
+        #output{
+            background-color: rgb(42, 37, 37);
+            border-color: rgb(90, 29, 29);
+            border-style: groove;
+            padding: 30px;
+            max-width: 360px;
+            margin:auto;
+            margin-top: 15px;
+            box-shadow: 0px 5px 1px rgba(0,0,0,0.1);
+        }
+        .output-title{
+            background:#8d180b;
+            padding:6px 10px;
+            display:inline-block;
+            font-weight:bold;
+            margin-bottom:20px;
+        }
+        .member-count{
+            position: fixed;
+            background:#8d180b;
+            display:inline-block;
+            padding:6px 10px;
+            margin-top:25px;
+            font-weight:bold;
+        }
+       footer{
+    background:#07122b;
+
+    text-align:center;
+
+    padding:5px;
+
+    margin-top:120px;
+
+    border-top:3px solid #40445b;
+}
+
+#footer{
+    color:#d8d8d0;
+    font-weight:bold;
+}
+    </style>
+</head>
+<body>
+     <nav>
+        <div class="nav-container">
+            <div class="nav-left"><h2>The FAYZ</h2></div>
+            <div class="nav-right">
+                <a href="index.html">Meet the Creator</a>
+                <a href="e-finder.html">Periodic Table: Element Finder</a>
+                <a href="c-verification.html">Logout</a>
+            </div>
+        </div>
+    </nav>
+    <h1>The FAYZ Club</h1>
+    <h5>Member Addition System</h5>
+    <hr>
+    <div class="row">
+        <div class="column">
+            <form>
+            <input type="text" id="firstname" placeholder="Enter First Name"><br>
+            <input type="text" id="lastname" placeholder="Enter Last Name"><br>
+            <input type="button" py-click="add_member" value="Add Member">
+            </form>
+        </div>
+        <div class="column">
+            <div id="output"></div>
+        </div>
+    </div>
+
+    <footer>
+         <p id="footer">©2026 | The FAYZ</p>
+    </footer>
+
+    <py-script src="m-addition.py"></py-script>
+</body>
+</html>

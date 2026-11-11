@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Py-script CDN-->
+        <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
+        <!-- This script tag bootstraps PyScript -->
+        <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>   
+    <title>Periodic Table Information Finder</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-left"><h2>The FAYZ</h2></div>
+            <div class="nav-right">
+                <a href="index.html">Meet the Creator</a>
+                <a href="m-addition.html">Member Addition System</a>
+                <a href="c-verification.html">Logout</a>
+            </div>
+        </div>
+    </nav>
+    <form>
+        <input type="text" id="input" placeholder="Enter element symbol">
+        <input type="button" py-click="search_element" value="Search Element">
+    </form>
+    <div id="output"></div>
+    <py-script src="e-finder.py"></py-script>
+</body>
+</html>
