@@ -9,83 +9,77 @@
         <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>   
     <title>Member Addition System</title>
     <style>
-        body{
-    margin:0;
-    min-height:100vh;
+        body{ 
+            background: radial-gradient(circle at center,#787d81 0%,#525860 35%,#454962 60%,#596659 100%);
+            margin:0;
+            min-height:100vh;
+            color:#d7d8d2;
+        }
+        nav{
+            background:#07122b;
+            border-top:4px solid #40445b;
+            border-bottom:4px solid #40445b;
+            padding:10px 20px;
+        }
 
-    background:
-    radial-gradient(
-        circle at center,
-        #787d81 0%,
-        #525860 35%,
-        #454962 60%,
-        #596659 100%
-    );
+        .nav-container{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
 
-    color:#d7d8d2;
-}
-       nav{
-    background:#07122b;
-    border-top:4px solid #40445b;
-    border-bottom:4px solid #40445b;
-    padding:10px 20px;
-}
+        .nav-right{
+            display:flex;
+            gap:25px;
+        }
 
-.nav-container{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
+        .nav-right a{
+            color:#d7d8d2;
+            font-size:18px;
+        }
 
-.nav-right{
-    display:flex;
-    gap:25px;
-}
+        h1{
+            text-align:center;
+            font-size:60px;
+            margin-bottom:0;
+            color:#d5d6cd;
+        }
 
-.nav-right a{
-    color:#d7d8d2;
-    font-size:18px;
-}
-h1{
-    text-align:center;
-    font-size:70px;
-    margin-bottom:0;
-    color:#d5d6cd;
-}
+        h5{
+            text-align:center;
+            margin-top:20px;
+            font-size:22px;
+            color:#8f908b;
+        }
 
-h5{
-    text-align:center;
-    margin-top:20px;
-    font-size:25px;
-    color:#8f908b;
-}
-hr{
-    width:68%;
-    border:none;
-    height:2px;
-    background:#492929;
-    margin:50px auto;
-}
-.row{
-    display:flex;
-    justify-content:center;
-    align-items:flex-start;
-    gap:100px;
-}
+        hr{
+            width:68%;
+            border:none;
+            height:2px;
+            background:#492929;
+            margin:50px auto;
+        }
+        .row{
+            display:flex;
+            justify-content:center;
+            align-items:flex-start;
+            gap:100px;
+        }
+
         .form-column{
             margin-top:20px;
         }
-input[type="text"]{
-    width:250px;
-    height:35px;
-    margin-bottom:25px;
 
-    border:3px solid #47357b;
-    background:#ebebeb;
+        input[type="text"]{
+            width:250px;
+            height:35px;
+            margin-bottom:25px;
+            border:3px solid #47357b;
+            background:#ebebeb;
+            font-size:18px;
+            padding-left:10px;
+        }
 
-    font-size:18px;
-    padding-left:10px;
-}
         input[type="button"]{
             width:230px;
             height:40px;
@@ -126,22 +120,19 @@ input[type="text"]{
             margin-top:25px;
             font-weight:bold;
         }
-       footer{
-    background:#07122b;
 
-    text-align:center;
+        footer{
+            background:#07122b;
+            text-align:center;
+            padding:5px;
+            margin-top:120px;
+            border-top:3px solid #40445b;
+        }
 
-    padding:5px;
-
-    margin-top:120px;
-
-    border-top:3px solid #40445b;
-}
-
-#footer{
-    color:#d8d8d0;
-    font-weight:bold;
-}
+        #footer{
+            color:#d8d8d0;
+            font-weight:bold;
+        }
     </style>
 </head>
 <body>
